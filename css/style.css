@@ -133,17 +133,84 @@
 .icons a:hover .fa-youtube{
     color: #ff0000;
 }
-.product-items1{
+.productSection{
     width: 85%;
-    background-color: #ffffff;
-    background-size: 1000px;
-    position: relative;
+	background-color: #FFFFFF;
+	box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+	display: flex;
+	margin:30px auto;
+	flex-direction: column;
+	align-items: center;
+	padding:40px 20px;
+	margin-top: -60px;
+	position: relative;
+	background-size:1000px;
+	border-radius: 10px;
+}
+.productSection h3{
+    position: absolute;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: #3D3D4A;
+    margin: 20px;
+    letter-spacing: 2px;
+}
+.products{
     display: flex;
-    box-shadow: 2px 2px 2px 2px rgb(0,0,8);
-    border-radius: 10px;
-    flex-direction: column;
-    margin-top: -60px;
-    padding: 20px 15px;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 65px 0px;
+	width:100%;
+}
+.productBox{
+    width:250px;
+	height: 330px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 8px;
+	position: relative;
+	margin: 10px 30px;
+}
+.productBox img{
+    height: 180px;
+}
+.productBox a{
+    text-decoration: none;
+    color: #2f2e41;
+}
+.productBox p{
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5e5e66cc;
+}
+.BuyNow{
+    position: absolute;
+	width:140px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family:calibri;
+	left: 50%;
+	bottom: -20px;
+	transform: translateX(-50%);
+	border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+	background:linear-gradient(120deg,#6b60ec 20%,#a166f4);
+	color:#FFFFFF;
+	display: none;
+	animation: fade 0.2s;
+    
+}
+.productBox:hover .BuyNow{ 
+    display: flex;
+}
+.productBox:hover{
+    box-shadow: 2px 2px 30px rgb(165, 164, 164);
+    background-color: #FFFFFF;
 }
